@@ -15,6 +15,8 @@ You can use Android Studio or Visual Studio Code.
 ### going further
 if you want a deeper understanding, you can watch these videos:
 - https://www.youtube.com/watch?v=Wa0rdbb53I8
+- https://www.youtube.com/watch?v=z05m8nlPRxk
+- https://www.youtube.com/watch?v=mZYuuGAIwe4&t=3s
 
 This project is a starting point for a Flutter application.
 
@@ -31,3 +33,6 @@ samples, guidance on mobile development, and a full API reference.
 ```
 flutter run
 ```
+
+# packages used
+https://pub.dev/packages/firebase_auth/install
