@@ -38,3 +38,4 @@ flutter run
 
 # packages used
 https://pub.dev/packages/firebase_auth/install
+https://pub.dev/packages/firebase_core/install
