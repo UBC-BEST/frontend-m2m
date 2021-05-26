@@ -19,6 +19,9 @@ if you want a deeper understanding, you can watch these videos:
 - https://www.youtube.com/watch?v=mZYuuGAIwe4&t=3s
 - https://www.youtube.com/watch?v=LBJoY4VjECo
 - https://www.youtube.com/watch?v=PS0b2gJ04Bs
+- https://www.youtube.com/watch?v=LkpPEYuqbIY
+- https://www.youtube.com/watch?v=j_SJ7XmT2MM
+- https://www.youtube.com/watch?v=v3sY3RWciNw
 
 This project is a starting point for a Flutter application.
 
@@ -39,3 +42,4 @@ flutter run
 # packages used
 https://pub.dev/packages/firebase_auth/install
 https://pub.dev/packages/firebase_core/install
+https://pub.dev/packages/provider

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:frontend_m2m/model/m2m_user.dart';
 import 'package:frontend_m2m/services/auth.dart';
 
 class SignIn extends StatefulWidget {
@@ -22,13 +23,13 @@ class _SignInState extends State<SignIn> {
         child: ElevatedButton(
           child: Text("Sign in"),
           onPressed: () async {
-            dynamic result = await _auth.signIn();
+            M2MUser? result = await _auth.signInTest();
 
             if (result == null) {
               print("error signing in");
               print(result);
             } else {
-              print(result);
+              print(result.uid);
             }
           },
         ),
