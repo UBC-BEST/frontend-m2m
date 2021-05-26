@@ -17,6 +17,8 @@ if you want a deeper understanding, you can watch these videos:
 - https://www.youtube.com/watch?v=Wa0rdbb53I8
 - https://www.youtube.com/watch?v=z05m8nlPRxk
 - https://www.youtube.com/watch?v=mZYuuGAIwe4&t=3s
+- https://www.youtube.com/watch?v=LBJoY4VjECo
+- https://www.youtube.com/watch?v=PS0b2gJ04Bs
 
 This project is a starting point for a Flutter application.
 
