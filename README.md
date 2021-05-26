@@ -12,6 +12,9 @@ You can use Android Studio or Visual Studio Code.
 ## VSCode
 - install the Dart and Flutter plugins
 
+### going further
+if you want a deeper understanding, you can watch these videos:
+- https://www.youtube.com/watch?v=Wa0rdbb53I8
 
 This project is a starting point for a Flutter application.
 
