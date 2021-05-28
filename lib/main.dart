@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:frontend_m2m/model/m2m_user.dart';
+import 'package:frontend_m2m/screens/new-user/walkthrough.dart';
 import 'package:frontend_m2m/screens/wrapper.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:frontend_m2m/services/auth.dart';
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
       initialData: null,
       value: AuthService().user,
       child: MaterialApp(
-        home: Wrapper(),
+        home: Walkthrough(),
       ),
     );
   }
