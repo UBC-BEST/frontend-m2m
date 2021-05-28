@@ -37,8 +37,11 @@ class _HomeState extends State<Home> {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        title: Text("M2M"),
-        backgroundColor: Colors.blue,
+        title: Text(
+          "M2M",
+          style: TextStyle(color: Colors.black),
+        ),
+        backgroundColor: Colors.white,
         elevation: 0.0,
       ),
       body: Container(
