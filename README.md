@@ -1,7 +1,7 @@
 # 👋🏻 frontend and mobile repo for m2m
 
-You will need Dart and Flutter: https://flutter.dev/docs/get-started/install
-Folow the instructions for your platform.
+- You will need Dart and Flutter: https://flutter.dev/docs/get-started/install
+- Folow the instructions for your platform.
 
 ## Getting Started
 You can use Android Studio or Visual Studio Code.
@@ -25,6 +25,7 @@ if you want a deeper understanding, you can watch these videos:
 - https://www.youtube.com/watch?v=_SHssHJJhAI
 - https://www.youtube.com/watch?v=E-DRnRUXcBY
 - https://www.youtube.com/watch?v=jl5E0UfAGVs
+- https://www.youtube.com/watch?v=Jy82t4IKJSQ
 
 This project is a starting point for a Flutter application.
 
