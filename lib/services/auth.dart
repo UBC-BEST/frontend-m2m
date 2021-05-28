@@ -53,8 +53,9 @@ class AuthService {
 
   Future signOut() async {
     try {
-      _auth.signOut();
+      return await _auth.signOut();
     } catch (e) {
+      print(e.toString());
       print("Error signing out");
     }
   }

@@ -22,6 +22,9 @@ if you want a deeper understanding, you can watch these videos:
 - https://www.youtube.com/watch?v=LkpPEYuqbIY
 - https://www.youtube.com/watch?v=j_SJ7XmT2MM
 - https://www.youtube.com/watch?v=v3sY3RWciNw
+- https://www.youtube.com/watch?v=_SHssHJJhAI
+- https://www.youtube.com/watch?v=E-DRnRUXcBY
+- https://www.youtube.com/watch?v=jl5E0UfAGVs
 
 This project is a starting point for a Flutter application.
 

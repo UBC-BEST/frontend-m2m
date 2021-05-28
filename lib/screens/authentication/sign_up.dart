@@ -2,16 +2,16 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:frontend_m2m/services/auth.dart';
 
-class SignIn extends StatefulWidget {
+class SignUp extends StatefulWidget {
   final Function toggleView;
 
-  SignIn({required this.toggleView});
+  SignUp({required this.toggleView});
 
   @override
-  _SignInState createState() => _SignInState();
+  _SignUpState createState() => _SignUpState();
 }
 
-class _SignInState extends State<SignIn> {
+class _SignUpState extends State<SignUp> {
   final AuthService _auth = AuthService();
   String password = "";
   String email = "";
@@ -21,7 +21,7 @@ class _SignInState extends State<SignIn> {
       backgroundColor: Colors.white,
       appBar: AppBar(
         elevation: 0,
-        title: Text("Sign in"),
+        title: Text("Sign up"),
       ),
       body: Container(
         padding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 50.0),
@@ -55,11 +55,11 @@ class _SignInState extends State<SignIn> {
                   print(email);
                   print(password);
                 },
-                child: Text("Sign in"),
+                child: Text("Sign up"),
               ),
               RichText(
                 text: TextSpan(
-                  text: "Don't have an account? Sign up!",
+                  text: "Already have an account? Sign in!",
                   style: TextStyle(fontSize: 20, color: Colors.black),
                   recognizer: TapGestureRecognizer()
                     ..onTap = () {
