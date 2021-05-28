@@ -1,5 +1,7 @@
 # 👋🏻 frontend and mobile repo for m2m
 
+[![Dart](https://github.com/UBC-BEST/frontend-m2m/actions/workflows/dart.yml/badge.svg)](https://github.com/UBC-BEST/frontend-m2m/actions/workflows/dart.yml)
+
 - You will need Dart and Flutter: https://flutter.dev/docs/get-started/install
 - Folow the instructions for your platform.
 
