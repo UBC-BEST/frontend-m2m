@@ -47,3 +47,8 @@ flutter run
 https://pub.dev/packages/firebase_auth/install
 https://pub.dev/packages/firebase_core/install
 https://pub.dev/packages/provider
+
+# (potential) game tutorials:
+- https://www.youtube.com/watch?v=vgmVPpFP0fI
+- https://www.youtube.com/watch?v=o_eVKOqY48Q
+- https://www.youtube.com/watch?v=Q0RTaOkFxWM
