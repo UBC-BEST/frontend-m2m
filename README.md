@@ -50,6 +50,7 @@ flutter run
 - https://pub.dev/packages/firebase_core/install
 - https://pub.dev/packages/provider
 - https://pub.dev/packages/flutter_svg
+- https://pub.dev/packages/http
 
 # (potential) game tutorials:
 - https://www.youtube.com/watch?v=vgmVPpFP0fI
