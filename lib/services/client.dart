@@ -2,20 +2,26 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 
 class APIClient {
-  String test_url = "https://m2m-gateway.herokuapp.com/test";
+  String publicURL = "https://m2m-gateway.herokuapp.com/test";
+  String testURL = "http://jsonplaceholder.typicode.com/posts";
   String url = "";
 
   Future getTestAPIEndpoint() async {
-    var uri = Uri.parse(test_url);
-    var response = await http.get(uri);
+    Uri uri = Uri.parse(publicURL);
+    http.Response response = await http.get(uri);
 
     if (response.statusCode == 200) {
       print(response.body);
-      String listOfStuff = json.decode(response.body).toString();
+      List<dynamic> listOfStuff =
+          json.decode(response.body).map((val) => extractTask(val)).toList();
       return listOfStuff;
     } else {
       print(response.statusCode);
       print("And error on APIClient has occurred");
     }
+  }
+
+  String extractTask(Map<String, dynamic> rawJson) {
+    return rawJson["todo"];
   }
 }

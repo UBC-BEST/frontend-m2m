@@ -8,11 +8,20 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   final _api = APIClient();
+  var data;
+
+  @override
+  void initState() {
+    super.initState();
+    this.setState(() {
+      data = _api.getTestAPIEndpoint();
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
-    var response = _api.getTestAPIEndpoint();
     return Column(
-      children: [
+      children: <Widget>[
         Text("Home"),
       ],
     );
