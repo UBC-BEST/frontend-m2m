@@ -6,7 +6,7 @@ class Walkthrough2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Walkthrough(
-        imgPath: "hand_phone",
+        imgPath: "hand_balloon",
         buttonStr: "Next",
         blurb:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus congue suscipit mollis. Vivamus eros purus.",

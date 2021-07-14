@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 import 'package:frontend_m2m/model/m2m_user.dart';
 import 'package:frontend_m2m/screens/bottom-nav/bottom-nav.dart';
@@ -25,33 +27,71 @@ class Walkthrough extends StatelessWidget {
       return Home();
     } else {
       String walkthroughImgsFolder = "assets/new_user_walkthrough/";
+
       return Scaffold(
         backgroundColor: Colors.white,
-        body: Container(
-          padding: EdgeInsets.symmetric(vertical: 50.0),
-          child: Column(
-            children: <Widget>[
-              Image(
-                height: MediaQuery.of(context).size.height / 2,
-                image:
+        body: Container( 
+            child: Column(
+              children: <Widget>[
+                Align(
+                  alignment: Alignment.centerLeft,
+                  child: Image(
+                    height: MediaQuery.of(context).size.height / 2,
+                    width: 250,
+                    image:
                     AssetImage(walkthroughImgsFolder + this.imgPath + ".png"),
-              ),
-              Text(
-                this.header,
-              ),
-              Text(
-                this.blurb,
-              ),
-              ElevatedButton(
-                onPressed: () {
-                  this.action();
-                },
-                child: Text(this.buttonStr),
-              )
-            ],
+                  ),
+                ),
+                
+                Center(
+                  child: Padding(
+                    padding: EdgeInsets.all(20.0),
+                    child: Text(
+                      this.header,
+                      style: TextStyle(fontFamily: 'Rubik Medium'),
+                    ),
+                  ),
+                ),
+                
+
+                Center(
+                  child: Padding(
+                    padding: const EdgeInsets.only(left: 40, right: 40, bottom: 60),
+                    child: Text(
+                      this.blurb,
+                      textAlign: TextAlign.center,
+                      style: TextStyle(fontFamily: 'Rubik Regular'),
+                    ),
+                  ),
+                ),
+                
+                SizedBox(
+                  width: 270,
+                  height: 39,
+                  child: ElevatedButton(
+                    onPressed: () {
+                      this.action();
+                    },
+                    style: ButtonStyle(
+                      shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                        RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(12.0),
+                        )
+                      ),
+                     backgroundColor: MaterialStateProperty.all<Color>(Colors.blue.shade600),
+                    ),
+                    child: Text(
+                      this.buttonStr,
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
+                ),
+              ],
+            ),
           ),
-        ),
-      );
+        );      
     }
   }
 }
