@@ -43,6 +43,10 @@ class _SignUpState extends State<SignUp> {
                   SizedBox(
                     height: 20.0,
                   ),
+                  Text(
+                    "Email",
+                    textAlign: TextAlign.left,
+                  ),
                   TextFormField(
                     validator: (value) =>
                         value!.isEmpty ? "Enter an email" : null,
@@ -53,6 +57,10 @@ class _SignUpState extends State<SignUp> {
                   ),
                   SizedBox(
                     height: 20.0,
+                  ),
+                  Text(
+                    "Password",
+                    textAlign: TextAlign.left,
                   ),
                   TextFormField(
                     validator: (value) =>
@@ -84,15 +92,23 @@ class _SignUpState extends State<SignUp> {
                   SizedBox(
                     height: 20.0,
                   ),
-                  RichText(
-                    text: TextSpan(
-                      text: "Already have an account? Sign in!",
-                      style: TextStyle(fontSize: 20, color: Colors.black),
-                      recognizer: TapGestureRecognizer()
-                        ..onTap = () {
-                          widget.toggleView();
-                        },
-                    ),
+                  Row(
+                    children: [
+                      Text("Already have an account?"),
+                      RichText(
+                        text: TextSpan(
+                          text: "Sign in!",
+                          style: TextStyle(
+                              fontSize: 20,
+                              color: Colors.blue,
+                              fontWeight: FontWeight.bold),
+                          recognizer: TapGestureRecognizer()
+                            ..onTap = () {
+                              widget.toggleView();
+                            },
+                        ),
+                      ),
+                    ],
                   ),
                 ],
               ),

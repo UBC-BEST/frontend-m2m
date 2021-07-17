@@ -43,6 +43,10 @@ class _SignInState extends State<SignIn> {
                   SizedBox(
                     height: 20.0,
                   ),
+                  Text(
+                    "Email",
+                    textAlign: TextAlign.left,
+                  ),
                   TextFormField(
                     validator: (value) =>
                         value!.isEmpty ? "Enter an email" : null,
@@ -54,6 +58,7 @@ class _SignInState extends State<SignIn> {
                   SizedBox(
                     height: 20.0,
                   ),
+                  Text("Password"),
                   TextFormField(
                     validator: (value) =>
                         value!.length < 6 ? "Enter a password" : null,
@@ -84,15 +89,23 @@ class _SignInState extends State<SignIn> {
                   SizedBox(
                     height: 20.0,
                   ),
-                  RichText(
-                    text: TextSpan(
-                      text: "Don't have an account? Sign up!",
-                      style: TextStyle(fontSize: 20, color: Colors.black),
-                      recognizer: TapGestureRecognizer()
-                        ..onTap = () {
-                          widget.toggleView();
-                        },
-                    ),
+                  Row(
+                    children: [
+                      Text("Don't have an account?"),
+                      RichText(
+                        text: TextSpan(
+                          text: "Sign up!",
+                          style: TextStyle(
+                              fontSize: 20,
+                              color: Colors.blue,
+                              fontWeight: FontWeight.bold),
+                          recognizer: TapGestureRecognizer()
+                            ..onTap = () {
+                              widget.toggleView();
+                            },
+                        ),
+                      ),
+                    ],
                   ),
                 ],
               ),
