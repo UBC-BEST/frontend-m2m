@@ -48,7 +48,7 @@ class Walkthrough extends StatelessWidget {
                   padding: EdgeInsets.all(20.0),
                   child: Text(
                     this.header,
-                    style: TextStyle(fontFamily: 'Rubik Medium'),
+                    style: TextStyle(fontFamily: 'Rubik'),
                   ),
                 ),
               ),
@@ -59,7 +59,7 @@ class Walkthrough extends StatelessWidget {
                   child: Text(
                     this.blurb,
                     textAlign: TextAlign.center,
-                    style: TextStyle(fontFamily: 'Rubik Regular'),
+                    style: TextStyle(fontFamily: 'Rubik'),
                   ),
                 ),
               ),
