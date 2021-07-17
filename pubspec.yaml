@@ -54,6 +54,7 @@ flutter:
     - assets/new_user_walkthrough/
     - assets/login_signup/
 
+
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
 
@@ -79,3 +80,13 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+
+
+fonts:
+  - family: Rubik
+    fonts:
+      - asset: fonts/Rubik/static/Rubik-Regular.ttf
+        style: normal
+      - asset: fonts/Rubik/static/Rubik-Medium.ttf
+
+
